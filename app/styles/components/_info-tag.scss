@@ -32,7 +32,6 @@
   }
 
   .info-text {
-    @include font-size(2.25);
     display: inline-block;
     vertical-align: middle;
     width: $aside-width - $aside-margin - 1;
