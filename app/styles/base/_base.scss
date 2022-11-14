@@ -18,7 +18,7 @@ h6 {
 
 h1 {
   @include lato(300);
-  @include font-size(10);
+  font-size: 31px;
   letter-spacing: -.5px;
 }
 
@@ -95,7 +95,7 @@ ul {
   -webkit-padding-start: spacing(5);
 
   li:not(:last-child) {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
   }
 
   li {
@@ -122,6 +122,12 @@ ul {
       padding-left: 0;
     }
   }
+}
+
+
+
+.item h6:not(:last-child) {
+  margin-bottom: 4px;
 }
 
 @page {

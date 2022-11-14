@@ -4,26 +4,26 @@
 
   {{#if location}}
     {{#location}}
-    {{> info-tag text=(formatAddress address city region postalCode countryCode) icon="fa-map-marker"}}
+    {{> info-tag text=(formatAddress address city region postalCode countryCode)}}
     {{/location}}
   {{/if}}
 
   {{#if email}}
-    {{> info-tag text=this.email icon="fa-envelope-o"}}
+    {{> info-tag text=this.email}}
   {{/if}}
 
   {{#if phone}}
-    {{> info-tag text=this.phone icon="fa-mobile"}}
+    {{> info-tag text=this.phone}}
   {{/if}}
 
   {{#if website}}
     {{> info-tag text=this.website icon="fa-desktop" url=this.website}}
   {{/if}}
 
-  {{#if profiles}}
+  {{!-- {{#if profiles}}
     {{#each profiles}}
         {{> social}}
     {{/each}}
-  {{/if}}
+  {{/if}} --}}
 </section>
 {{/resume.basics}}
